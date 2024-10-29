@@ -11,11 +11,11 @@ on:
       image_tag:
         description: "Docker Image Tag"
         required: false
-        default: "dev"
+        default: "latest"
 
 jobs:
   docker-build:
-    runs-on: DO
+    runs-on: ubuntu-latest
     # DO is a custom runner deployed on DigitalOcean, only available for workflows under the runpod-workers organization.
     # If you would like to use this workflow, you can replace DO with ubuntu-latest or any other runner.
 
